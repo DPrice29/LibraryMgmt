@@ -2,14 +2,15 @@
 <html>
     <head>
         <title>Bluford Library</title> 
+        <link rel = 'stylesheet' href = 'styles.css'/>
     </head>
     <body>
         <h2>Book Checkout</h2>
-        <form>
-            <label for="banner">Enter student banner ID:</label>
-            <input type="text" id="banner" name="banner"><br>
-            <label for="isbn">Enter book ISBN:</label>
-            <input type="text" id="isbn" name="isbn"><br>
+        <form action="connect.php" method="post">
+            <label for="member">Enter student ID:</label>
+            <input type="text" id="member" name="member"><br>
+            <label for="book">Enter book ISBN:</label>
+            <input type="text" id="book" name="book"><br>
             <input type="submit" value="Check Out">
         </form>
     </body>
